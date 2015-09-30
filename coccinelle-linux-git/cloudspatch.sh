@@ -28,6 +28,7 @@ if [ $? -ne 0 ];then
 fi
 
 cd $GIT_DIR
+git remote update
 git checkout $GIT_TAG
 if [ $? -ne 0 ];then
 	echo Git did not like your string for checking out...
