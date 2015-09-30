@@ -1,6 +1,5 @@
 #!/bin/bash
 # Peter Senna Tschudin <peter.senna@gmail.com>
-# First argument string passed to 
 
 if [ "$#" -lt 2 ];then
 	clear
@@ -10,10 +9,11 @@ if [ "$#" -lt 2 ];then
 	exit 1
 fi
 
+CORE_CNT=$(nproc)
 GIT_DIR=/linux
 COCCI_DIR=/cocci
 COCCI_FILE=useme.cocci
-CORE_CNT=$(nproc)
+
 COCCI_URL=$1
 GIT_TAG=$2
 
