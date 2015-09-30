@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://kernel.googlesource.com/pub/scm/linux/kernel/git/torvalds/linux
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "linux-next"]
+	url = https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next
+	fetch = +refs/heads/*:refs/remotes/linux-next/*
+[remote "linux-staging"]
+	url = https://kernel.googlesource.com/pub/scm/linux/kernel/git/gregkh/staging
+	fetch = +refs/heads/*:refs/remotes/linux-staging/*
