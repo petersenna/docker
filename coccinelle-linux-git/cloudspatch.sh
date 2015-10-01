@@ -7,9 +7,8 @@ COCCI_DIR=/cocci
 COCCI_FILE=useme.cocci
 
 if [ "$#" -lt 2 ];then
-	clear
 	echo First argument: URL to the .cocci file for curl
-	echo Second argument: string for git checkout from:
+	echo Second argument: string for git checkout from these remotes:
 	cd $GIT_DIR; git branch -a
 	echo All other arguments will be passed to spatch
 	exit 1
