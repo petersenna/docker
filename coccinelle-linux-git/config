@@ -3,11 +3,11 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[remote "origin"]
+[remote "linux"]
 	url = https://kernel.googlesource.com/pub/scm/linux/kernel/git/torvalds/linux
-	fetch = +refs/heads/*:refs/remotes/origin/*
+	fetch = +refs/heads/*:refs/remotes/linux/*
 [branch "master"]
-	remote = origin
+	remote = linux
 	merge = refs/heads/master
 [remote "linux-next"]
 	url = https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next
