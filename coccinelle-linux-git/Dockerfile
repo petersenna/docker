@@ -5,6 +5,7 @@ RUN dnf install -y git; dnf clean all
 
 RUN mkdir -p /linux/.git
 ADD ["config", "/linux/.git/config"]
+ADD ["spatch-wrapper", "/usr/local/bin"]
 
 # Don't checkout now
 RUN cd /linux; git init; git remote update
